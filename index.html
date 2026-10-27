@@ -27,5 +27,13 @@
     <iframe title="Mokubung Consultants brochure PDF" src="https://ntulimpendulo.github.io/mokubung-consultants-brochure/MokubungConsultants_TheWhat.pdf#view=FitH" loading="eager"></iframe>
     <div class="fallback">If the document does not appear above, <a style="color:#e9bd5d" href="https://ntulimpendulo.github.io/mokubung-consultants-brochure/MokubungConsultants_TheWhat.pdf">open the PDF here</a>.</div>
   </main>
+  <script>
+    // Embedded PDF viewers frequently cannot scroll correctly in mobile browsers.
+    // Open the same-host PDF directly on phones so the browser's native reader handles it.
+    const brochurePdf = 'https://ntulimpendulo.github.io/mokubung-consultants-brochure/MokubungConsultants_TheWhat.pdf';
+    if (window.matchMedia('(max-width: 767px)').matches) {
+      window.location.replace(brochurePdf + '#view=FitH');
+    }
+  </script>
 </body>
 </html>
