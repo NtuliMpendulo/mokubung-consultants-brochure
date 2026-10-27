@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#061a37">
+  <title>Mokubung Consultants | Brochure</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; min-height: 100%; font-family: Arial, Helvetica, sans-serif; color: #f7f8fb; background: #061a37; }
+    header { min-height: 74px; padding: 12px 20px; display: flex; align-items: center; justify-content: space-between; gap: 16px; background: #041128; border-bottom: 1px solid rgba(220,174,70,.5); }
+    .brand { color: #e9bd5d; font-family: Georgia, serif; letter-spacing: .14em; font-size: 18px; font-weight: 700; }
+    .tagline { color: #e9bd5d; font-size: 12px; letter-spacing: .12em; white-space: nowrap; }
+    main { height: calc(100dvh - 74px); min-height: 420px; display: flex; flex-direction: column; }
+    .toolbar { min-height: 52px; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 9px 16px; background: #0b2346; }
+    .label { font-size: 14px; }
+    .open { display: inline-block; color: #061a37; background: #e9bd5d; border-radius: 4px; padding: 9px 13px; font-weight: 700; text-decoration: none; font-size: 13px; }
+    iframe { border: 0; flex: 1; width: 100%; min-height: 0; background: #fff; }
+    .fallback { display: none; padding: 22px; text-align: center; color: #d9e2f1; }
+    @media (max-width: 480px) { header { min-height: 62px; padding: 10px 13px; } main { height: calc(100dvh - 62px); } .brand { font-size: 15px; } .tagline { font-size: 10px; } .toolbar { padding: 8px 11px; } .label { font-size: 12px; } }
+  </style>
+</head>
+<body>
+  <header><div class="brand">MOKUBUNG CONSULTANTS</div><div class="tagline">FIX IT. BUILD IT. EXIT.</div></header>
+  <main>
+    <div class="toolbar"><span class="label">Company brochure</span><a class="open" href="https://raw.githubusercontent.com/NtuliMpendulo/mokubung-consultants-brochure/main/MokubungConsultants_TheWhat.pdf" target="_blank" rel="noopener">Open PDF separately</a></div>
+    <iframe title="Mokubung Consultants brochure PDF" src="https://raw.githubusercontent.com/NtuliMpendulo/mokubung-consultants-brochure/main/MokubungConsultants_TheWhat.pdf#view=FitH" loading="eager"></iframe>
+    <div class="fallback">If the document does not appear above, <a style="color:#e9bd5d" href="https://raw.githubusercontent.com/NtuliMpendulo/mokubung-consultants-brochure/main/MokubungConsultants_TheWhat.pdf">open the PDF here</a>.</div>
+  </main>
+</body>
+</html>
